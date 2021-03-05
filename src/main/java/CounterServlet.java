@@ -3,8 +3,8 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet(name = "PageViewCountServlet", urlPatterns = "/count")
-public class PageViewCountServlet extends HttpServlet{
+@WebServlet(name = "CounterServlet", urlPatterns = "/count")
+public class CounterServlet extends HttpServlet{
 	private int count = 0;
 
 	@Override
