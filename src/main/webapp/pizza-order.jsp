@@ -1,8 +1,3 @@
-<%--@elvariable id="crust" type="OrderFormServlet"--%>
-<%--@elvariable id="sauce" type="OrderFormServlet"--%>
-<%--@elvariable id="size" type="OrderFormServlet"--%>
-<%--@elvariable id="toppings" type="OrderFormServlet"--%>
-<%--@elvariable id="address" type="OrderFormServlet"--%>
 <%--
   Created by IntelliJ IDEA.
   User: johnny
@@ -18,7 +13,6 @@
 </head>
 <body>
 <h2>Build Your Pizza!</h2>
-<%--<form action="pizza-order">--%>
 <form method="POST" action="pizza-order">
 
 	<h4>Crust</h4>
@@ -35,11 +29,11 @@
 	<h4>Sauce</h4>
 	<section>
 		<label for="s1">Spicy Marinara</label>
-		<input type="radio" name="sauce" value="spicyM" id="s1"><br>
+		<input type="radio" name="sauce" value="marinara" id="s1"><br>
 		<label for="s2">Garlic Alfredo</label>
-		<input type="radio" name="sauce" value="garlicA" id="s2"><br>
+		<input type="radio" name="sauce" value="garlic" id="s2"><br>
 		<label for="s3">No Sauce</label>
-		<input type="radio" name="sauce" value="noS" id="s3"><br>
+		<input type="radio" name="sauce" value="none" id="s3"><br>
 	</section>
 	<hr>
 
