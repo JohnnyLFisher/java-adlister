@@ -15,10 +15,9 @@ public class ColorPickerServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		if (request.getMethod().equalsIgnoreCase("post")) {
 			String color = request.getParameter("color");
 			response.sendRedirect("/viewcolor?color="+color);
-		}
+
 		request.getRequestDispatcher("pickcolor.jsp").forward(request, response);
 	}
 }

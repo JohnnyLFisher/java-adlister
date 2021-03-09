@@ -12,7 +12,7 @@ public class DoubleNumServlet extends HttpServlet{
 		int userNum = Integer.parseInt(request.getParameter("num"));
 		request.setAttribute("userNum", userNum);
 		request.setAttribute("dubNum", userNum * 2);
-		request.getRequestDispatcher("dub-num.jsp").forward(request, response);
+		request.getRequestDispatcher("double-num.jsp").forward(request, response);
 	}
 
 }
